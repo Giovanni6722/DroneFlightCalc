@@ -27,9 +27,6 @@ def flight_time_table(max_weight_grams, step_grams):
     if step_grams <= 0:
         raise ValueError("step_grams must be positive")
 
-    values = []
-    current_weight = 0
-
     """
     while current_weight <= max_weight_grams + 1e-9:
         values.append((current_weight, calculate_flight_time(current_weight)))
